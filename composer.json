@@ -1,0 +1,25 @@
+{
+    "name": "medis/violetaskya-frontend",
+    "description": "SPA application for violetaskya.com",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Audrius Bukauskas",
+            "email": "aubuka@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VioletaskyaFrontend\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VioletaskyaFrontend\\AppServiceProvider"
+            ]
+        }
+    }
+}
