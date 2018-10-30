@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{asset(mix('app.css', 'vendor/violetaskya'))}}" type='text/css'>
 
     <!-- Scripts -->
     <script>
@@ -28,6 +28,6 @@
 </div>
 
 <!-- Scripts -->
-<script src="{{ mix('js/app.js') }}"></script>
+<script src="{{asset(mix('app.js', 'vendor/violetaskya'))}}"></script>
 </body>
 </html>
