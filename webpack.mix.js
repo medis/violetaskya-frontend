@@ -32,16 +32,13 @@ mix
             alias: {
                 '@': path.resolve(__dirname, 'resources/js/'),
             }
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.(gql|graphql)$/,
+                    loader: 'graphql-tag/loader'
+                }
+            ]
         }
     });
-
-mix.webpackConfig({
-    module: {
-        rules: [
-            {
-                test: /\.(gql|graphql)$/,
-                loader: 'graphql-tag/loader'
-            }
-        ]
-    }
-});
