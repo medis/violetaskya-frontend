@@ -18,6 +18,9 @@
         "laravel/framework": "~5.7.7",
         "symfony/var-dumper": "^4.1"
     },
+    "require-dev": {
+        "orchestra/testbench": "~3.7"
+    },
     "extra": {
         "laravel": {
             "providers": [
