@@ -14,7 +14,10 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "laravel/framework": "~5.7.7",
+        "symfony/var-dumper": "^4.1"
+    },
     "extra": {
         "laravel": {
             "providers": [
