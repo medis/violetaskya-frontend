@@ -21,6 +21,11 @@
     "require-dev": {
         "orchestra/testbench": "~3.7"
     },
+    "autoload-dev": {
+        "psr-4": {
+            "VioletaskyaFrontend\\Tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
