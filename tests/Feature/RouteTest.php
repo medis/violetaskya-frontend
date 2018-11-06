@@ -9,7 +9,7 @@ class RouteTest extends FeatureTestCase
     /** @test */
     public function it_can_load_page()
     {
-        $this->get('/')
+        $this->get(route('vueroute'))
             ->assertSuccessful();
     }
 }
