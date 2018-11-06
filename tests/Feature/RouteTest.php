@@ -9,6 +9,7 @@ class RouteTest extends FeatureTestCase
     /** @test */
     public function it_can_load_page()
     {
-        $this->assert(TRUE);
+        $this->get('/')
+            ->assertSuccessful();
     }
 }
