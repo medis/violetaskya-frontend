@@ -13,4 +13,18 @@ class FeatureTestCase extends TestCase
             AppServiceProvider::class
         ];
     }
+
+    /**
+     * @param  \Illuminate\Foundation\Application  $app
+     * @return void
+     */
+    protected function getEnvironmentSetUp($app)
+    {
+        $config = $app->get('config');
+        $config->set('logging.default', 'errorlog');
+
+        $app->bind('path.public', function() {
+            return realpath(__DIR__ . '/../public');
+        });
+    }
 }
