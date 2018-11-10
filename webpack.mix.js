@@ -26,6 +26,7 @@ mix
     .js('resources/js/app.js', 'public')
     .sass('resources/sass/app.scss', 'public')
     .version()
+    .copy('public', '../violetatest/public/vendor/violetaskya')
     .webpackConfig({
         resolve: {
             symlinks: false,

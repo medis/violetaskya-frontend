@@ -24,7 +24,7 @@ class FeatureTestCase extends TestCase
         $config->set('logging.default', 'errorlog');
 
         $app->bind('path.public', function() {
-            return realpath(__DIR__ . '/../public');
+            return realpath(__DIR__ . '/../../violetatest/public');
         });
     }
 }
