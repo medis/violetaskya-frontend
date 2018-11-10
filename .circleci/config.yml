@@ -24,5 +24,9 @@ jobs:
         - ./vendor
         key: v1-dependencies-{{ checksum "composer.json" }}
 
+    # make temp public folder for tests.
+    - run: mkdir -p ../violetatest/public/vendor/violetaskya
+    - run: cp -r public/* ../violetatest/public/vendor/violetaskya/
+
     # run tests!
     - run: ./vendor/bin/phpunit
