@@ -44,7 +44,7 @@ export default {
 
   methods: {
     getImages() {
-      axios.get('/api/flickr').then(response => {
+      axios.get('/api/photos').then(response => {
         this.images = response.data.data
       })
     },
