@@ -2,16 +2,14 @@
 // window.axios = require('axios');
 
 import axios from 'axios';
-
-window.Vue = require('vue');
-
 import VueNotifications from 'vue-notifications';
 import miniToastr from 'mini-toastr';
 import VueRouter from 'vue-router';
-import ContentPlaceholder from 'vue-content-placeholder';
 import apolloProvider from './apollo';
 import moment from 'moment';
 import chunk from 'chunk';
+
+window.Vue = require('vue');
 
 window.moment = moment;
 window.axios = axios;
