@@ -4,7 +4,7 @@ query frontPageQuery ($shows_number: Int!) {
 		title
 		link
 	}
-	shows (page: 1, limit: $shows_number) {
+	shows (page: 1, limit: $shows_number, upcoming: true) {
 		data {
 			id
 			venue
