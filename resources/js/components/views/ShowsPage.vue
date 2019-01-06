@@ -14,15 +14,19 @@
         <div v-else>
 
           <div v-if="shows.data.length">
-            <h3 v-if="future_shows.length" class="show-heading">Future shows</h3>
-            <div class="box">
-              <show v-for="show in future_shows" :key="show.id" :show="show"></show>
-            </div>
+            <template v-if="future_shows.length">
+              <h3 class="show-heading">Future shows</h3>
+              <div class="box">
+                <show v-for="show in future_shows" :key="show.id" :show="show"></show>
+              </div>
+            </template>
 
-            <h3 v-if="past_shows.length" class="show-heading">Past shows</h3>
-            <div class="box">
-              <show v-for="show in past_shows" :key="show.id" :show="show"></show>
-            </div>
+            <template v-if="past_shows.length">
+              <h3 class="show-heading">Past shows</h3>
+              <div class="box">
+                <show v-for="show in past_shows" :key="show.id" :show="show"></show>
+              </div>
+            </template>
 
             <div class="columns">
               <div class="column is-6 is-offset-3">
