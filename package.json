@@ -33,6 +33,7 @@
     "vue-router": "^3.0.1"
   },
   "dependencies": {
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "unfetch": "^4.0.1"
   }
 }
