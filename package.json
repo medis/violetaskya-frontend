@@ -10,29 +10,30 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "apollo-cache-inmemory": "^1.2.1",
-    "apollo-client": "^2.3.1",
-    "apollo-link": "^1.2.2",
-    "apollo-link-http": "^1.5.4",
+    "apollo-cache-inmemory": "^1.4.2",
+    "apollo-client": "^2.4.12",
+    "apollo-link": "^1.2.8",
+    "apollo-link-http": "^1.5.11",
     "axios": "^0.18",
     "babel-loader": "^7.1.5",
-    "bulma": "^0.7.2",
+    "bulma": "^0.7.4",
     "chunk": "0.0.2",
     "cross-env": "^5.1",
     "graphql": "^0.13.2",
-    "graphql-tag": "^2.9.2",
+    "graphql-tag": "^2.10.1",
     "laravel-mix": "^2.0",
     "lodash": "^4.17.4",
     "mini-toastr": "^0.6.5",
-    "moment": "^2.10.6",
+    "moment": "^2.24.0",
     "moment-timezone": "^0.5.21",
-    "vue": "^2.5.7",
-    "vue-apollo": "^3.0.0-beta.25",
+    "vue": "^2.5.17",
+    "vue-apollo": "^3.0.0-beta.28",
     "vue-content-placeholder": "^1.1.1",
     "vue-notifications": "^0.8.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.2"
   },
   "dependencies": {
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "unfetch": "^4.0.1"
   }
 }
